@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alisha - Developer Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(77, 77, 175);
+        font-size: 1.04rem;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3rem;
+      }
+      .leftsection .buttons {
+        padding: 50px 0;
+      }
+      .leftsection .btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .perpul {
+        color: rgb(111, 59, 160);
+      }
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(111, 59, 160);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 77px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        margin: 23px 122px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Alisha's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#" class="nav-link" data-section="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-section="about">About</a></li>
+            <li>
+              <a href="#" class="nav-link" data-section="services">Services</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="projects">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="contact">Contact Me</a>
+            </li>
+          </ul>
+
+          <!-- <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">about</a></li>
+            <li><a href="/">Srvices</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">contact Me</a></li>
+          </ul> -->
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="perpul">Alisha</span>
+
+          <div>and i am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn" id="downloadBtn">Download Resume</button>
+            <button class="btn" id="githubBtn">Visit Github</button>
+
+            <!-- <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button> -->
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="pg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png" alt="" />
+            <div class="vertical-title">HTML Developer</div>
+            <div class="vertical-desc">
+              As an experienced HTML Developer, I specialize in crafting clean,
+              responsive, and standards-compliant code. From static pages to
+              fully interactive user interfaces, I ensure websites look great
+              and perform well on all devices and browsers.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="js.png" alt="" />
+            <div class="vertical-title">Java Script Developer</div>
+            <div class="vertical-desc">
+              Built responsive web applications using modern JavaScript (ES6+),
+              DOM manipulation, and API integration. Developed interactive UIs
+              with frameworks like React and handled backend services using
+              Node.js and Express. Focused on performance optimization and
+              writing clean, modular code.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="python.png" alt="" />
+            <div class="vertical-title">Python Developer</div>
+            <div class="vertical-desc">
+              Developed web applications and automation tools using Python.
+              Worked with frameworks like Flask and Django, implemented REST
+              APIs, and built scripts for data scraping, analysis, and
+              reporting. Collaborated on AI/ML projects involving NumPy, Pandas,
+              and Scikit-learn.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="java.png" alt="" />
+            <div class="vertical-title">Java Developer</div>
+            <div class="vertical-desc">
+              I'm a Java Developer with a solid foundation in backend
+              development, RESTful APIs, and enterprise-grade applications. I
+              enjoy building robust, secure, and efficient systems using Spring
+              Boot and related technologies. I’m also passionate about clean
+              code, problem-solving, and continuous learning.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="c++.png" alt="C++ Developer" />
+            <div class="vertical-title">C++ Developer</div>
+            <div class="vertical-desc">
+              Designed and developed high-performance applications using modern
+              C++ (C++11/14/17). Implemented optimized algorithms and
+              system-level programming for real-time solutions in embedded
+              systems and software tools.
+
+              <!-- <img class="image-top" src="developer.png" alt="" />
+            <div class="vertical-title">C++ Developer</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum, sit. Cum, alias ipsa, quas exercitationem non quam
+              accusamus iusto provident asperiores qui reprehenderit! -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Alisha's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        copyright&#169; www.alishasprotfolio.com|All right reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Software Developer",
+          "Vidio Editor",
+        ],
+        typeSpeed: 50,
+      });
+    </script> -->
+    <script>
+      // Button actions
+
+      var typed = new Typed("#element", {
+        strings: [
+          "Python Developer",
+          "JavaScript Developer",
+          "Frontend Engineer",
+          "Full-Stack Web Developer",
+        ],
+        typeSpeed: 50,
+      });
+
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          const link = document.createElement("a");
+          link.href = "resume.pdf"; // Make sure this path is correct
+          link.download = "resume.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
+          // Simulate download
+          window.location.href = "resume.pdf"; // Make sure resume.pdf is in your project folder
+        });
+
+      document
+        .getElementById("githubBtn")
+        .addEventListener("click", function () {
+          window.open("https://github.com/your-github-username", "_blank");
+        });
+
+      // Navigation link actions (example scrolling or alert)
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent default anchor behavior
+
+          const section = link.getAttribute("data-section");
+
+          // You can scroll to a section or just show alert
+          alert(`You clicked on ${section}`);
+
+          // Optional scroll logic if sections have corresponding IDs:
+          // const sectionElement = document.getElementById(section);
+          // if (sectionElement) {
+          //   sectionElement.scrollIntoView({ behavior: "smooth" });
+          // }
+        });
+      });
+
+      // Footer links (you can reuse the same .nav-link logic if you add class there too)
+      document.querySelectorAll(".footer li").forEach((item) => {
+        item.addEventListener("click", () => {
+          alert(`Footer clicked: ${item.textContent}`);
+        });
+      });
+    </script>
+  </body>
+</html>
